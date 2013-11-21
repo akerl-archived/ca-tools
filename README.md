@@ -30,10 +30,11 @@ curl https://github.com/akerl/ca-tools/raw/master/certs/ca.crt
 
 #### Create a CA (once)
 
-1. Pick a secure system for the CA to live on
-2. If that system is a server, you probably want haveged installed for entropy
-3. Clone this repo there
-4. Run `makeca.sh`
+1. Edit openssl.conf to have the right SAN and distinguished_name settings
+2. Pick a secure system for the CA to live on
+3. If that system is a server, you probably want haveged installed for entropy
+4. Clone this repo there
+5. Run `makeca.sh`
     * You'll need to provide a passphrase. Put that passphrase in [1Password](https://agilebits.com/onepassword) (you do use 1Password, don't you)
 
 #### Generate a new signed child certificate
