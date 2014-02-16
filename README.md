@@ -1,6 +1,8 @@
 ca-tools
 ===========
 
+[![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
+
 Certificate authority tools and public bits.
 
 ## Usage
@@ -55,4 +57,8 @@ Do the following on the system the new certificate is for:
 
 1. Pull the repo changes: `git pull`
 2. Your certificate is now located at ./certs/$NAME.crt and the key is in ./keys/$NAME.key
+
+## License
+
+ca-tools is released under the MIT License. See the bundled LICENSE file for details.
 
