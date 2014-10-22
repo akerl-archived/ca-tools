@@ -54,7 +54,7 @@ organizationalUnitName_default  = akerl
 emailAddress_default            = admin@lesaker.org
 
 [ v3_ca ]
-basicConstraints        = CA:FALSE
+basicConstraints        = CA:TRUE
 subjectKeyIdentifier    = hash
 authorityKeyIdentifier  = keyid:always,issuer:always
 
