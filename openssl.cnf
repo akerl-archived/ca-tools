@@ -12,7 +12,8 @@ new_certs_dir   = $dir/certs
 certificate     = $dir/certs/ca.crt
 private_key     = $dir/private/ca.key
 default_days    = 365
-default_md      = sha1
+default_bits    = 2048
+default_md      = sha256
 preserve        = no
 nameopt         = default_ca
 certopt         = default_ca
@@ -30,7 +31,7 @@ emailAddress            = optional
 
 [ req ]
 default_bits        = 2048
-default_md          = sha1
+default_md          = sha256
 distinguished_name  = distinguished_name
 req_extensions      = v3_req
 
