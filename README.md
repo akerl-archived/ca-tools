@@ -1,3 +1,5 @@
+**Inactivity Notice:** I no longer actively use this. It probably still mostly works, but I can't make any promises that the certs it generates make good choices in a modern security env (good hash algo choices, sane openssl settings, etc etc). If you're going to use or borrow from this, I'd recommend making sure you double-check that. If you find an issue, I'd happily accept a GitHub Issue or PR about it.
+
 ca-tools
 ===========
 
