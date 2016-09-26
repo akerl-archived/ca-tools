@@ -1,3 +1,6 @@
+dependencies:
+  override:
+  - sudo apt-get install shellcheck
 test:
   override:
-  - /bin/true
+  - /bin/false
