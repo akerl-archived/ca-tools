@@ -3,7 +3,7 @@
 ca-tools
 ===========
 
-[![Build Status](https://img.shields.io/circleci/project/akerl/ca-tools.svg)](https://circleci.com/gh/akerl/ca-tools)
+[![Build Status](https://img.shields.io/circleci/project/akerl/ca-tools/master.svg)](https://circleci.com/gh/akerl/ca-tools)
 [![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://tldrlegal.com/license/mit-license)
 
 Certificate authority tools and public bits.
