@@ -1,6 +1,6 @@
 dependencies:
   override:
-  - sudo apt-get install shellcheck
+  - sudo apt-get install shellcheck/trusty-backports
 test:
   override:
-  - /bin/false
+  - find . -type f -name '*.sh' | xargs shellcheck
