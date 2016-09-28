@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Move where we need to be
-cd $(dirname $0)
+cd "$(dirname $0)"
 
 # Make sure we're up to date
 git pull || exit 1
