@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Move where we need to be
-cd "$(dirname "$0")"
+cd "$(dirname "$0")" || exit 1
 
 # Make sure repo is up to date
 git pull || exit 1
 
 # Make sure the cert exists
-if [ -z "$1" -o ! -f "certs/$1.crt" ] ; then
+if [ -z "$1" ] || [ ! -f "certs/$1.crt" ] ; then
     echo 'Please run ./revoke.sh name-of-cert'
     exit 1
 fi

@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Move where we need to be
-cd "$(dirname "$0")"
+cd "$(dirname "$0")" || exit 1
 
 # Make sure repo is up to date
 git pull || exit 1
 
 # Make sure the CSR exists
-if [ -z "$1" -o ! -f "requests/$1.csr" ] ; then
+if [ -z "$1" ] || [ ! -f "requests/$1.csr" ] ; then
     echo 'Please run ./sign.sh name-of-system'
     exit 1
 fi
